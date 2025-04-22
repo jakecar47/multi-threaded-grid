@@ -5,9 +5,6 @@
 #include <sys/time.h>
 #include "proj4.h"
 
-/*
- * Do not modify anything in this file. 
- */
 
 /*
  * Helper function for main. 
@@ -35,25 +32,7 @@ void errorCheck(int argc, char ** argv){
   if(errorFound) exit(0);
 }
 
-/*
- * This program should be compiled to ./proj4.out using the provided
- * Makefile, and it will process five command line arguments.
- *   ./proj.out input.txt output.txt s t
- *      input.txt is the name of a file in the present working directory that 
- *        contains a n-by-n grid of digits (1 through 9),
- *        where n >= 1.
- *      output.txt is the name of a file in the present working directory to save
- *        the output of all of the diagonal sums. If the file does not exist,
- *        then this file will be created in the present working directory.
- *      s is the sum for the diagonal sums.
- *      t is the number of threads (1 <= t <= 3) to use
- *        to compute the diagonal sums. If t is 1, then only the 
- *        main thread will be used. If 2 <= t <= 3, then the main
- *        thread and (t - 1) POSIX thread(s) will be used to compute
- *        the diagonal sums.
- * This program will only time the call to diagonalSums.
- *
- */
+// Main function to execute the diagonal sums computations and print to standard output
 int main(int argc, char ** argv){
   errorCheck(argc, argv);
   char * inputFile = argv[1];
