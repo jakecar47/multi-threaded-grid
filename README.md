@@ -6,13 +6,13 @@ To compile: make
 To run: ./proj4.out <input file> <output file> <n x n grid size number> <number of threads (1 - 3)>
 
 
-NOTES------------------
+# Notes
 proj4.c encompasses the code to initialize, allocate memory, perform operations on, and close grid instances
 
 main.c structures the execution of the code, prints output to the console, and calls functions from proj4.c
 
 
-FINDINGS---------------
+# Findings
 Upon creating separate input files and testing execution times using different numbers of threads on different sized grids, I have made some interesting findings. 
 
 SMALL SIZED GRIDS:
