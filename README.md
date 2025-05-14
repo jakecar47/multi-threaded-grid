@@ -1,9 +1,15 @@
 # multi-threaded-grid
 Multi-threaded grid program in C to parse and perform operations on a grid from an input file using 1-3 threads.
 
-To compile in odin: make
+To compile: make
 
-To run in odin: ./proj4.out <input file> <output file> <n x n grid size number> <number of threads (1 - 3)>
+To run: ./proj4.out <input file> <output file> <n x n grid size number> <number of threads (1 - 3)>
+
+
+NOTES------------------
+proj4.c encompasses the code to initialize, allocate memory, perform operations on, and close grid instances
+
+main.c structures the execution of the code, prints output to the console, and calls functions from proj4.c
 
 
 FINDINGS---------------
