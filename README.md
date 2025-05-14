@@ -7,7 +7,7 @@ To run: ./proj4.out <input file> <output file> <n x n grid size number> <number 
 
 
 # Notes
-proj4.c encompasses the code to initialize, allocate memory, perform operations on, and close grid instances
+proj4.c encompasses the code to initialize, allocate memory for, perform operations on, and deallocate grid instances
 
 main.c structures the execution of the code, prints output to the console, and calls functions from proj4.c
 
